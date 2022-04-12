@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background:url("imagenes/images.jfif") no-repeat fixed;
+            background-size:cover ;
+        }
+    </style>
+    <h1 class="text-center mt-5 display-4 text-primary">
+        <a href="index.html">&larr;</a> Index
+      </h1><br><br>
+      
+      <h2>Aumento del dinero del 2%</h2>
+  
+   <form>
+       <input type="number" id="dinero">
+       <button onclick="enviar()">Aumento</button>
+   </form>
+  
+    <script>
+        function enviar(){
+            var dinero1 = document.getElementById('dinero').value;
+            var a = dinero1*1.02;
+            alert("su dinero aumenta a: "+a +"mensual")
+        }
+    </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+
+
+</body>
+
+</html>

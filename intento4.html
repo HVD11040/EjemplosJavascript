@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intento4</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background:url("imagenes/images.jfif") no-repeat fixed;
+            background-size:cover ;
+        }
+    </style>
+    <h1 class="text-center mt-5 display-4 text-primary">
+        <a href="index.html">&larr;</a> Index
+      </h1><br><br>
+      
+      <h2>Descuento</h2>
+  
+   <form>
+        <input type="text" id="nombre">
+        <input type="number" id="compra">
+       <button onclick="enviar()">Descuento</button>
+   </form>
+  
+    <script>
+        function enviar(){
+            var compra1 = document.getElementById('compra').value;
+            var nombre1 = document.getElementById('nombre').value;
+            alert("el valor de su compra es:"+" "+ compra1)
+
+            a = (compra1)*(0.30);
+            b = (compra1)*(0.10);
+            ac = (compra1)*(0.70);
+            bd = (compra1)*(0.90);
+
+            if(compra1 >= 150000){
+                alert(+"obtuvo un descuento del 30%")
+                alert("sele descuenta "+" "+a+" "+" pesos")
+                alert("el valor total a pagar es "+" "+ac+" "+" pesos")
+            }else{
+                alert("obtuvo un descuento del 10%")
+                alert("sele descuenta "+" "+b+" "+" pesos")
+                alert("el valor total a pagar es "+" "+bd+" "+" pesos")
+            }
+        }
+    </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+
+
+</body>
+
+</html>

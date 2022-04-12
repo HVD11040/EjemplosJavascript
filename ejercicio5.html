@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background:url("imagenes/images.jfif") no-repeat fixed;
+            background-size:cover ;
+        }
+    </style>
+    <h1 class="text-center mt-5 display-4 text-primary">
+      <a href="index.html">&larr;</a> Index
+      </h1><br><br>
+      
+      <h2>Promedio</h2>
+  
+   <form>
+        <input type="number" id="lugar1" placeholder="primer establecimiento">
+        <input type="number" id="lugar2" placeholder="segundo establecimiento">
+        <input type="number" id="lugar3" placeholder="tercer establecimiento">
+       <button onclick="enviar()">Promedio</button>
+   </form>
+  
+    <script>
+        function enviar(){
+            var lugar1 = document.getElementById('lugar1').value;
+            var lugar2 = document.getElementById('lugar2').value;
+            var lugar3 = document.getElementById('lugar3').value;
+            
+            prom = parseFloat(lugar1)+ parseFloat(lugar2)+ parseFloat(lugar3);
+            final = (prom)/3;
+            alert("el promedio es: " + final)
+
+        }
+    </script>
+
+
+      
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio12</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background:url("imagenes/images.jfif") no-repeat fixed;
+            background-size:cover ;
+        }
+    </style>
+    <h1 class="text-center mt-5 display-4 text-primary">
+        <a href="index.html">&larr;</a> Index
+      </h1><br><br>
+      
+      <h2>Cual numero es menor</h2>
+  
+   <form>
+       <input type="number" id="numero1">
+       <input type="number" id="numero2">
+       <button onclick="enviar()">enviar</button>
+   </form>
+  
+    <script>
+        function enviar(){
+            var n1 = document.getElementById('numero1').value;
+            var n2 = document.getElementById('numero2').value;
+
+            if(n1<n2){
+                alert(n1 + " es menor que " + n2)
+            }else if(n2<n1){
+                alert(n2 + " es menor que " + n1)
+            }else if(n1=n2){
+                alert(n1 + " y " + n2 + " son iguales")
+            }else {}
+            
+        }
+    </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+
+
+</body>
+
+</html>

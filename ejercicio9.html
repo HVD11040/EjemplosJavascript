@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajercicio9</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background:url("imagenes/images.jfif") no-repeat fixed;
+            background-size:cover ;
+        }
+    </style>
+    <h1 class="text-center mt-5 display-4 text-primary">
+        <a href="index.html">&larr;</a> Index
+      </h1><br><br>
+      
+      <h2>Altura</h2>
+  
+   <form>
+    <input type="number" id="altura">
+    <button onclick="enviar()">Calcular</button>
+   </form>
+  
+    <script>
+        function enviar(){
+            /*si la altura es menor o
+igual a 150 cm envíe el mensaje: “Persona de altura baja”; si la altura está entre 151 y 170
+escriba el mensaje: “Persona de altura media” y si la altura es mayor al 171 escriba el
+mensaje: “Persona alta*/
+            var altura1 = document.getElementById('altura').value;
+
+            if(altura1<=0){
+                alert("digite una altura real")
+            }else if(altura1>=1 && altura1<=150){
+                alert("persona de altura baja")
+            }else if(altura1>=151 && altura1<=170){
+                alert("persona de altura media")
+            }else if(altura1>=171 && altura1<=300){
+                alert("persona alta")
+            }else{}
+        }
+    </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+
+
+</body>
+
+</html>

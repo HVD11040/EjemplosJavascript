@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio14</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background:url("imagenes/images.jfif") no-repeat fixed;
+            background-size:cover ;
+        }
+    </style>
+    <h1 class="text-center mt-5 display-4 text-primary">
+        <a href="index.html">&larr;</a> Index
+      </h1>
+      
+      <h2>Division</h2>
+  
+   <form>
+       <input type="number" id="division1">
+        <input type="number" id="division2">
+       <button onclick="enviar()">Dividir</button>
+   </form>
+  
+    <script>
+        function enviar(){
+            var division1 = document.getElementById('division1').value;
+            var division2 = document.getElementById('division2').value;
+            var d = division1/division2;
+            if(division2==0){
+                alert("la division no es posible")
+            }else{
+                alert(d)
+            }
+            
+
+
+        }    
+    </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+
+
+</body>
+
+</html>
